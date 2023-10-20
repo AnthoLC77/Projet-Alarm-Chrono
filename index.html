@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bde6463c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container-alarm">
+            <h1>Alarm</h1>
+            <span class="outline"></span>
+            <span id="timer-chrono"></span>
+            <div class="container-start-chrono">
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="stop">Stop</button>
+            </div>
+            <div class="container-input-alarm">
+                <input type="text" name="heure" id="heure" maxlength="24" placeholder="00">
+                <input type="text" name="minute" id="minute" placeholder="00">
+            </div>
+
+            <div class="container-button">
+                <div class="container-button-toggle">
+                    <button id="add-alarm">Add Alarm</button>
+                    <button id="clear-alarm">Clear all</button>
+                </div>
+                <p class="error"></p>
+            </div>
+            <div class="container-add-alarm">
+
+            </div>
+            <footer>
+                <span id="date"></span>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
